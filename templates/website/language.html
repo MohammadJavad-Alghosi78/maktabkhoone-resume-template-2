@@ -1,3 +1,14 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
-<div>This is language page</div>
+<div style="text-align: center; width: 100%">
+  My First language is {{first_language.value}} and I know it
+  {{first_language.rate}}
+</div>
+<div style="text-align: center; width: 100%">
+  My second language is {{second_language.value}} and I know it
+  {{second_language.rate}}
+</div>
+<div style="text-align: center; width: 100%">
+  My third language is {{third_language.value}} and I know it
+  {{third_language.rate}}
+</div>
 {% endblock %}

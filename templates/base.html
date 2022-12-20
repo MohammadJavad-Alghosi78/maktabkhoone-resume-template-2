@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="{% static 'css/base.css' %}" />
   </head>
   <body>
-    <header>
-      <h1>This is header</h1>
-      <ul>
+    <header class="header">
+      <h1 class="header__title">This is header</h1>
+      <ul class="header__routes-wrapper">
         <li><a href="{% url 'website:language' %}">languages</a></li>
         <li><a href="{% url 'website:education' %}">education</a></li>
         <li><a href="{% url 'website:skills' %}">skills</a></li>
@@ -23,7 +23,7 @@
         </li>
       </ul>
     </header>
-    {% block content %} {% endblock %}
+    <main>{% block content %} {% endblock %}</main>
     <footer>This is footer</footer>
   </body>
 </html>

@@ -4,10 +4,38 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh !important;
+}
+
 header {
   width: 100%;
   text-align: center;
-  background-color: gray;
+  background-color: green;
+  padding: 1rem;
+}
+
+.header__routes-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+.header__routes-wrapper a {
+  color: yellow;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 1rem;
+  height: calc(100vh - 155px);
 }
 
 footer {
@@ -15,4 +43,5 @@ footer {
   text-align: center;
   background-color: blue;
   color: white;
+  padding: 1rem;
 }
