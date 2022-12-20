@@ -19,7 +19,11 @@ def language_view(request):
     return render(request, 'website/language.html', context)
 
 def education_view(request):
-    pass
+    context = {
+        'high_school': 'Sampad',
+        'university': 'Sharif',
+    }
+    return render(request, 'website/education.html', context)
 
 def skills_view(request):
     pass
