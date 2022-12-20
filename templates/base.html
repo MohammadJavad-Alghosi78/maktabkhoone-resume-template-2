@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+  </head>
+  <body>
+    <header>
+      <h1>This is header</h1>
+      <ul>
+        <li><a href="{% url 'website:language' %}">languages</a></li>
+        <li><a href="{% url 'website:education' %}">education</a></li>
+        <li><a href="{% url 'website:skills' %}">skills</a></li>
+        <li><a href="{% url 'website:project' %}">projects</a></li>
+        <li>
+          <a href="{% url 'website:personal-information' %}"
+            >personal information</a
+          >
+        </li>
+      </ul>
+    </header>
+    {% block content %} {% endblock %}
+    <footer>This is footer</footer>
+  </body>
+</html>
