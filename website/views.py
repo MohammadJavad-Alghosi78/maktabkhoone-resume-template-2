@@ -26,10 +26,27 @@ def education_view(request):
     return render(request, 'website/education.html', context)
 
 def skills_view(request):
-    pass
+    return render(request, 'website/skills.html')
 
 def project_view(request):
-    pass
+    context = {
+        "setare_sim": 'setaresim.com',
+        'setare_aval': 'setareaval.com',
+    }
+    return render(request, 'website/projects.html', context)
 
 def personal_information_view(request):
-    pass
+    context = {
+        'living': 'Mazandaran, chalus',
+        'phone_number': '09338633187',
+        'gmail': 'javad.alghosi7904@gmail.com'
+    }
+    return render(request, 'website/personal-info.html', context)
+
+
+
+
+
+
+
+

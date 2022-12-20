@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<img src="{% static 'img/me.jpg' %}" alt="me" style="width: 180px" />
+<div style="background-color: black; color: red; padding: 12px">
+  I know how to use images in jinja and django :)
+</div>
+<div>I am living in {{living}}</div>
+<div>My phone number is {{phone_number}}</div>
+<div>My gmail is {{gmail}}</div>
+
+{% endblock %}
